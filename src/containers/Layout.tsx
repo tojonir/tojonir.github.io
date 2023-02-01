@@ -1,11 +1,18 @@
-import { PageProps } from "gatsby";
-import React, { FC } from "react";
+import React, { FC, ReactElement } from "react";
+import Navigation from "./Navigation";
 import "../styles/index.css";
+import Footer from "./Footer";
 
-const Layout: FC<PageProps> = () => {
+interface LayoutProps {
+  children: ReactElement;
+}
+
+const Layout: FC<LayoutProps> = ({ children }) => {
   return (
-    <main>
-      <div>tojo</div>
+    <main className="max-w-[1366px] px-[130px]">
+      <Navigation />
+      <div>{children}</div>
+      <Footer />
     </main>
   );
 };

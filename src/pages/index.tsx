@@ -1,8 +1,13 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
+import Layout from "../containers/Layout";
 
 const IndexPage: React.FC<PageProps> = () => {
-  return <div>tojo</div>;
+  return (
+    <Layout>
+      <div>tojo</div>
+    </Layout>
+  );
 };
 
 export default IndexPage;
