@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: -webkit-radial-gradient(top left, #350fa2, #09021d);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
