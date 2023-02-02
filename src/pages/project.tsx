@@ -5,7 +5,7 @@ import Layout from "../containers/Layout";
 const Project: FC = () => {
   return (
     <Layout>
-      <div>project</div>
+      <div className="h-full">project</div>
     </Layout>
   );
 };
