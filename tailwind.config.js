@@ -6,7 +6,17 @@ module.exports = {
     "./src/containers/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        transparent: "#00000000",
+        balck: "#000000",
+        white: "#ffffff",
+        orange: "#FFCC00",
+        bleuDark: "#110630",
+        bleySky: "#04B6E9",
+        grey: "#B9C2C8",
+      },
+    },
   },
   plugins: ["gatsby-plugin-postcss"],
 };

@@ -5045,6 +5045,11 @@ gatsby-parcel-config@^1.5.0:
     "@parcel/transformer-js" "2.8.2"
     "@parcel/transformer-json" "2.8.2"
 
+gatsby-plugin-fontawesome-css@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-fontawesome-css/-/gatsby-plugin-fontawesome-css-1.2.0.tgz#fc828dd1d39ff46d7a22f1389642ba65d4755a18"
+  integrity sha512-Me7zFKPDmFQAWZmC2MQN7vWSHGFneu6FeIylkVinSMh89C0wPeoF165rpfuEdpgG0HScNg0fSh3xCIxYr5gPOQ==
+
 gatsby-plugin-image@^3.5.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-3.5.0.tgz#ff25e4e169951503bace8ec4758d3cd2dedb6445"

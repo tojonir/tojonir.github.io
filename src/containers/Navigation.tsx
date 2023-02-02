@@ -15,7 +15,7 @@ const Navigation: FC = () => {
   `);
 
   return (
-    <nav className="flex justify-between items-center h-[70px]">
+    <nav className="flex justify-between items-center h-[70px] px-[130px]">
       <div className="w-[117px]">
         <GatsbyImage
           image={logo.file.childImageSharp.gatsbyImageData}
