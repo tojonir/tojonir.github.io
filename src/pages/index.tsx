@@ -6,7 +6,6 @@ import AboutCard from "../components/AboutCard";
 
 const IndexPage: React.FC<PageProps> = ({ data }) => {
   const { project } = data;
-  console.log(data);
   return (
     <Layout>
       <>
