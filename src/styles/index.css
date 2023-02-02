@@ -10,3 +10,7 @@ body {
   overflow: hidden;
   color: #fff;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}

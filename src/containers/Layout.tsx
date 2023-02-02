@@ -9,9 +9,9 @@ interface LayoutProps {
 
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (
-    <main className="max-w-[1366px] px-[130px]">
+    <main className="overflow-y-scroll h-[100vh] max-w-[1366px] px-[130px]">
       <Navigation />
-      <div>{children}</div>
+      <div className="">{children}</div>
       <Footer />
     </main>
   );
