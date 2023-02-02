@@ -1,10 +1,11 @@
 import * as React from "react";
-import { graphql, HeadFC, PageProps } from "gatsby";
+import { graphql, HeadFC, Link, PageProps } from "gatsby";
 import Layout from "../containers/Layout";
 import { GatsbyImage } from "gatsby-plugin-image";
 import AboutCard from "../components/AboutCard";
 
 const IndexPage: React.FC<PageProps> = ({ data }) => {
+  const { project } = data;
   console.log(data);
   return (
     <Layout>
@@ -66,7 +67,37 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
             alt="skills"
           />
         </div>
-        <div className="my-5% border border-purple-600 rounded-[5px]"></div>
+        <div className="my-[5%] border border-purple-600 rounded-[5px] p-5">
+          <div className="grid grid-cols-4 auto-rows-[250px]">
+            {project.nodes.slice(0, 3).map((item: any) => (
+              <div className="relative group">
+                <Link to={`/project/${item.slug}`}>
+                  <GatsbyImage
+                    image={item.thumb.childImageSharp.gatsbyImageData}
+                    alt={item.name}
+                    className="h-full"
+                  />
+                  <div className="absolute top-0 w-full h-full hidden flex-col justify-between bg-black bg-opacity-10 group-hover:flex">
+                    <div className="flex justify-end">
+                      {item.tag.map((tag: any) => (
+                        <GatsbyImage
+                          image={tag.childImageSharp.gatsbyImageData}
+                          alt={item.name}
+                          className="w-[30px] ml-3"
+                        />
+                      ))}
+                    </div>
+                    <p className="font-semibold p-5">{item.name}</p>
+                  </div>
+                </Link>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-right text-bleuSky">
+            <Link to="/project">See More</Link>
+          </p>
+        </div>
       </>
     </Layout>
   );
@@ -101,6 +132,22 @@ export const query = graphql`
     bg_2: file(relativePath: { eq: "bg-2.png" }) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED)
+      }
+    }
+    project: allProjectJson {
+      nodes {
+        slug
+        name
+        tag {
+          childImageSharp {
+            gatsbyImageData(layout: CONSTRAINED)
+          }
+        }
+        thumb {
+          childImageSharp {
+            gatsbyImageData(layout: CONSTRAINED)
+          }
+        }
       }
     }
   }

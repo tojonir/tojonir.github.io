@@ -13,6 +13,7 @@ const config: GatsbyConfig = {
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    "gatsby-transformer-json",
     "gatsby-plugin-fontawesome-css",
     {
       resolve: "gatsby-source-filesystem",
@@ -21,6 +22,14 @@ const config: GatsbyConfig = {
         path: "./src/images/",
       },
       __key: "images",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "utils",
+        path: "./src/utils/",
+      },
+      __key: "utils",
     },
   ],
 };
