@@ -71,12 +71,7 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
         <div className="my-[5%] border border-purple-600 rounded-[5px] p-5">
           <div className="grid grid-cols-4 auto-rows-[250px]">
             {project.nodes.slice(0, 3).map((item: any) => (
-              <ProjectCard
-                name={item.name}
-                slug={item.slug}
-                image={item.thumb.childImageSharp.gatsbyImageData}
-                tag={item.tag}
-              />
+              <ProjectCard data={item} />
             ))}
           </div>
 
@@ -122,7 +117,6 @@ export const query = graphql`
     }
     project: allProjectJson {
       nodes {
-        slug
         name
         tag {
           childImageSharp {
@@ -130,6 +124,11 @@ export const query = graphql`
           }
         }
         thumb {
+          childImageSharp {
+            gatsbyImageData(layout: CONSTRAINED)
+          }
+        }
+        content {
           childImageSharp {
             gatsbyImageData(layout: CONSTRAINED)
           }
