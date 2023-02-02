@@ -10,10 +10,12 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
     <Layout>
       <>
         <div className="flex justify-between items-center">
-          <h1 className="text-[50px]">
+          <h1 className="text-[45px] leading-[65px]">
             Let's get into the
             <br />
-            <span className="text-[90px]">NEXT LEVEL</span>
+            <span className="text-[90px] font-medium text-left text-orange ml-[-3px]">
+              NEXT LEVEL
+            </span>
           </h1>
           <div className="w-1/2">
             <GatsbyImage
@@ -23,7 +25,7 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
           </div>
         </div>
         <h3 className="text-[44px] text-center mt-10">
-          I am passionate of <span>Technology</span>
+          I am passionate of <span className="text-bleuSky">Technology</span>
         </h3>
         <div className="flex justify-between mx-5">
           <AboutCard
