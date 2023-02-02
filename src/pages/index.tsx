@@ -27,7 +27,7 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
         <h3 className="text-[44px] text-center mt-10">
           I am passionate of <span className="text-bleuSky">Technology</span>
         </h3>
-        <div className="flex justify-between mx-5">
+        <div className="flex justify-between my-[5%]">
           <AboutCard
             img={
               <GatsbyImage
@@ -59,6 +59,14 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
             content="I am a leader"
           />
         </div>
+        <h3 className="text-[44px] text-center mt-10">Project life cycle</h3>
+        <div className="flex justify-center my-[5%]">
+          <GatsbyImage
+            image={data.bg_2.childImageSharp.gatsbyImageData}
+            alt="skills"
+          />
+        </div>
+        <div className="my-5% border border-purple-600 rounded-[5px]"></div>
       </>
     </Layout>
   );
@@ -86,6 +94,11 @@ export const query = graphql`
       }
     }
     about_3: file(relativePath: { eq: "about-3.png" }) {
+      childImageSharp {
+        gatsbyImageData(layout: CONSTRAINED)
+      }
+    }
+    bg_2: file(relativePath: { eq: "bg-2.png" }) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED)
       }
