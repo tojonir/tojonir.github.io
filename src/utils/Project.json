@@ -1,8 +1,12 @@
 [
   {
-    "slug": "be-one",
-    "name": "Be one",
-    "thumb": "../images/thumb/movies.png",
-    "tag": ["../images/tag/tag-ps.png", "../images/tag/tag-xd.png"]
+    "name": "Sales Poster",
+    "description": "",
+    "thumb": "../images/feature/poster-1.jpg",
+    "tag": ["../images/tag/ps.png", "../images/tag/ai.png"],
+    "content": [
+      "../images/feature/poster-1.jpg",
+      "../images/feature/poster-2.jpg"
+    ]
   }
 ]
