@@ -25,7 +25,7 @@ const Navigation: FC = () => {
       <div className="flex w-1/4 justify-between">
         <Link to="/">About</Link>
         <Link to="/project">Project</Link>
-        <Link to="/">Contact</Link>
+        <Link to="/contact">Contact</Link>
       </div>
     </nav>
   );
