@@ -3,6 +3,7 @@ import { brands, solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import React from "react";
 import { FC } from "react";
 import { Link } from "gatsby";
+import SocialNetwork from "./SocialNetwork";
 
 const Footer: FC = () => {
   return (
@@ -10,18 +11,7 @@ const Footer: FC = () => {
       <div className="flex justify-between">
         <div className="w-1/4">
           <p className="font-semibold text-orange">Reach me on</p>
-          <div className="flex items-center justify-between mt-[20px]">
-            <FontAwesomeIcon
-              icon={brands("instagram")}
-              className="text-[30px]"
-            />
-            <FontAwesomeIcon
-              icon={brands("linkedin-in")}
-              className="text-[30px]"
-            />
-            <FontAwesomeIcon icon={brands("google")} className="text-[25px]" />
-            <FontAwesomeIcon icon={brands("github")} className="text-[25px]" />
-          </div>
+          <SocialNetwork />
         </div>
         <div className="w-1/4">
           <p className="font-semibold text-orange">Usefull link</p>
