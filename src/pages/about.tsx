@@ -50,14 +50,42 @@ const About: FC<PageProps> = ({ data }) => {
             <span className="text-orange">continious delivery</span>.
             <br />
             <br /> In Order to keep me up-to-date, I master some software apart
-            <div className="flex items-center justify-between w-1/2 py-2">
-              <IconTool icon={brands("slack")} title="slack" />
-              <IconTool icon={brands("google")} title="google" />
-              <IconTool icon={brands("jira")} title="jira" />
-              <IconTool icon={brands("git")} title="git" />
-              <IconTool icon={brands("github")} title="github" />
-              <IconTool icon={brands("stack-overflow")} title="stackoverflow" />
-              <IconTool icon={brands("docker")} title="docker" />
+            <div className="flex items-center justify-between w-2/3 py-2">
+              <IconTool
+                icon={brands("slack")}
+                title="slack"
+                link="https://slack.com/"
+              />
+              <IconTool
+                icon={brands("google")}
+                title="google"
+                link="https://google.com/"
+              />
+              <IconTool
+                icon={brands("jira")}
+                title="jira"
+                link="https://jira.atlassian.com/"
+              />
+              <IconTool
+                icon={brands("git")}
+                title="git"
+                link="https://git-scm.com/"
+              />
+              <IconTool
+                icon={brands("github")}
+                title="github"
+                link="https://github.com/"
+              />
+              <IconTool
+                icon={brands("stack-overflow")}
+                title="stackoverflow"
+                link="https://stackoverflow.com/"
+              />
+              <IconTool
+                icon={brands("docker")}
+                title="docker"
+                link="https://www.docker.com/"
+              />
             </div>
             <br />
             <br /> Thanks for visiting me,

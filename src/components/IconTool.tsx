@@ -5,14 +5,23 @@ import React, { FC } from "react";
 interface IconToolProps {
   icon: IconDefinition;
   title: string;
+  link: string;
 }
 
-const IconTool: FC<IconToolProps> = ({ icon, title }) => {
+const IconTool: FC<IconToolProps> = ({ icon, title, link }) => {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <FontAwesomeIcon icon={icon} inverse />
-      <p className="text-[10px]">{title}</p>
-    </div>
+    <a
+      href={link}
+      target="_blank"
+      className="flex flex-col items-center justify-center group"
+    >
+      <FontAwesomeIcon
+        icon={icon}
+        inverse
+        className="group-hover:text-purple-600"
+      />
+      <p className="text-[11px] group-hover:text-purple-600">{title}</p>
+    </a>
   );
 };
 
