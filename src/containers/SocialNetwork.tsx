@@ -1,15 +1,48 @@
+import { SizeProp } from "@fortawesome/fontawesome-svg-core";
 import { brands } from "@fortawesome/fontawesome-svg-core/import.macro";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { FC } from "react";
 
-const SocialNetwork: FC = () => {
+interface SocialNetworkProps {
+  iconSize?: SizeProp;
+  iconStyle?: string;
+}
+
+const SocialNetwork: FC<SocialNetworkProps> = ({
+  iconSize = "xl",
+  iconStyle = "hover:text-purple-600",
+}) => {
   return (
     <div className="flex items-center justify-between mt-[20px]">
-      <FontAwesomeIcon icon={brands("instagram")} className="text-[30px]" />
-      <FontAwesomeIcon icon={brands("linkedin-in")} className="text-[30px]" />
-      <FontAwesomeIcon icon={brands("google")} className="text-[25px]" />
-      <FontAwesomeIcon icon={brands("github")} className="text-[25px]" />
+      <a href="" target="_blank">
+        <FontAwesomeIcon
+          icon={brands("instagram")}
+          size={iconSize}
+          className={`${iconStyle}`}
+        />
+      </a>
+      <a href="" target="_blank">
+        <FontAwesomeIcon
+          icon={brands("linkedin-in")}
+          size={iconSize}
+          className={`${iconStyle}`}
+        />
+      </a>
+      <a href="" target="_blank">
+        <FontAwesomeIcon
+          icon={brands("google")}
+          size={iconSize}
+          className={`${iconStyle}`}
+        />
+      </a>
+      <a href="" target="_blank">
+        <FontAwesomeIcon
+          icon={brands("github")}
+          size={iconSize}
+          className={`${iconStyle}`}
+        />
+      </a>
     </div>
   );
 };
