@@ -1,5 +1,4 @@
-import { brands, solid } from "@fortawesome/fontawesome-svg-core/import.macro";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { brands } from "@fortawesome/fontawesome-svg-core/import.macro";
 import { graphql, HeadFC, PageProps } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import React, { FC } from "react";
