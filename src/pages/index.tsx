@@ -7,7 +7,6 @@ import ProjectCard from "../components/ProjectCard";
 
 const IndexPage: React.FC<PageProps> = ({ data }) => {
   const { project } = data;
-  console.log(data);
   return (
     <Layout>
       <>
