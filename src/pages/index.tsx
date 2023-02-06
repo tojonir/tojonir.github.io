@@ -15,7 +15,7 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
           <h1 className="text-[45px] leading-[65px]">
             Let's get into the
             <br />
-            <span className="text-[90px] font-medium text-left text-orange ml-[-3px]">
+            <span className="text-[90px] font-medium text-left text-bleuSky ml-[-3px]">
               NEXT LEVEL
             </span>
           </h1>
@@ -86,7 +86,7 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
 
 export default IndexPage;
 
-export const Head: HeadFC = () => <title>Home Page</title>;
+export const Head: HeadFC = () => <title>Home</title>;
 
 export const query = graphql`
   query {

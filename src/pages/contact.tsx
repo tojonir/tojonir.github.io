@@ -1,3 +1,4 @@
+import { HeadFC } from "gatsby";
 import React from "react";
 import Layout from "../containers/Layout";
 import SocialNetwork from "../containers/SocialNetwork";
@@ -47,3 +48,5 @@ const Contact = () => {
   );
 };
 export default Contact;
+
+export const Head: HeadFC = () => <title>Contact</title>;

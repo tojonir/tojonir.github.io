@@ -1,6 +1,6 @@
 import { brands, solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { graphql, PageProps } from "gatsby";
+import { graphql, HeadFC, PageProps } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import React, { FC } from "react";
 import IconTool from "../components/IconTool";
@@ -12,12 +12,10 @@ const About: FC<PageProps> = ({ data }) => {
     <Layout>
       <div className="grid grid-cols-2 py-[3%]">
         <div className="">
-          <h1 className="text-[25px] font-semibold">
-            ANDRIANARIJAONA Tojonirina
-          </h1>
+          <p className="text-[44px]">About me</p>
           <p className="text-[19px]">
             I am a{" "}
-            <span className="font-semibold text-orange">
+            <span className="font-semibold text-bleuSky">
               self-taugth developer
             </span>
             , pasionate about technology especially Artificial Inteligence. I am
@@ -25,7 +23,7 @@ const About: FC<PageProps> = ({ data }) => {
             <br />
             <br />I have been in this field over 4 yers now.During that time I
             have passed through many challenges which strengthn my skills,
-            <span className="italic text-orange">
+            <span className="italic text-bleuSky">
               ”which does't kill you makes you stronger”
             </span>
             . I hope one day I will have my own tech company.
@@ -34,20 +32,20 @@ const About: FC<PageProps> = ({ data }) => {
             fast-learning are the pillar of my proffessionalism and development.
             <br />
             <br /> The best part i love as a developer is that there is always
-            new <span className="text-orange">challenges</span>,unendless
+            new <span className="text-bleuSky">challenges</span>,unendless
             creativity,to face.Moreover, huge{" "}
-            <span className="text-orange">community</span> of developer is very
+            <span className="text-bleuSky">community</span> of developer is very
             friendly,no matter where they come from either the age.
             <br />
             <br /> I love working with different people from different
             background. However, working as a team might be a nightmare without
             a rule and methodology. Therefore, I use the{" "}
-            <span className=" font-semibold text-orange">
+            <span className=" font-semibold text-bleuSky">
               Agile Methodology
             </span>{" "}
             to manage project. It has a huge impact in each team player to
             achieve the goal and insure the{" "}
-            <span className="text-orange">continious delivery</span>.
+            <span className="text-bleuSky">continious delivery</span>.
             <br />
             <br /> In Order to keep me up-to-date, I master some software apart
             <div className="flex items-center justify-between w-2/3 py-2">
@@ -100,8 +98,9 @@ const About: FC<PageProps> = ({ data }) => {
               alt="tojonirina"
             />
             <SocialNetwork />
-            <p>tojonirinaandrianarijaona@gmail.com</p>
-            <p>+261 34 09 112 78</p>
+            <p className="font-medium py-1 pt-3">ANDRIANARIJAONA Tojonirina</p>
+            <p className="py-1">tojonirinaandrianarijaona@gmail.com</p>
+            <p className="py-1">+261 34 09 112 78</p>
           </div>
         </div>
       </div>
@@ -110,6 +109,8 @@ const About: FC<PageProps> = ({ data }) => {
 };
 
 export default About;
+
+export const Head: HeadFC = () => <title>About</title>;
 
 export const query = graphql`
   query {

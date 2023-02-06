@@ -8,7 +8,7 @@ const Navigation: FC = () => {
     query MyQuery {
       file(relativePath: { eq: "logo.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED)
+          gatsbyImageData(layout: FIXED, width: 30)
         }
       }
     }
@@ -16,16 +16,24 @@ const Navigation: FC = () => {
 
   return (
     <nav className="flex justify-between items-center h-[70px] px-[130px]">
-      <div className="w-[117px]">
-        <GatsbyImage
-          image={logo.file.childImageSharp.gatsbyImageData}
-          alt="logo tojonirina"
-        />
-      </div>
-      <div className="flex w-1/4 justify-between">
-        <Link to="/about">About</Link>
-        <Link to="/project">Project</Link>
-        <Link to="/contact">Contact</Link>
+      <GatsbyImage
+        image={logo.file.childImageSharp.gatsbyImageData}
+        alt="logo tojonirina"
+        className="w-[10px]"
+      />
+      <div className="flex w-1/3 items-center justify-between">
+        <Link to="/" activeClassName="text-bleuSky">
+          Home
+        </Link>
+        <Link to="/about" activeClassName="text-bleuSky">
+          About
+        </Link>
+        <Link to="/project" activeClassName="text-bleuSky">
+          Project
+        </Link>
+        <Link to="/contact" className="border border-blue py-1 px-3 text-blue">
+          Contact
+        </Link>
       </div>
     </nav>
   );

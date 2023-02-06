@@ -1,4 +1,4 @@
-import { graphql, PageProps } from "gatsby";
+import { graphql, HeadFC, PageProps } from "gatsby";
 import React from "react";
 import { FC } from "react";
 import ProjectCard from "../components/ProjectCard";
@@ -18,6 +18,8 @@ const Project: FC<PageProps> = ({ data }) => {
 };
 
 export default Project;
+
+export const Head: HeadFC = () => <title>Project</title>;
 
 export const query = graphql`
   query {
