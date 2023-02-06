@@ -1,5 +1,5 @@
 import { graphql, Link, useStaticQuery } from "gatsby";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FC } from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 
@@ -13,15 +13,30 @@ const Navigation: FC = () => {
       }
     }
   `);
+  const [navBg, setNavBg] = useState<string>("");
+
+  useEffect(() => {
+    document.getElementById("main")?.addEventListener("scroll", (e) => {
+      const top: any = document.getElementById("main")?.scrollTop;
+      if (top === 0) {
+        setNavBg("");
+      }
+      if (top >= 50) {
+        setNavBg("bg-[#350fa2]");
+      }
+    });
+  }, []);
 
   return (
-    <nav className="flex justify-between items-center h-[70px] px-[130px]">
+    <nav
+      className={`flex justify-between items-center h-[70px] px-[130px] sticky top-0 z-10 ${navBg}`}
+    >
       <GatsbyImage
         image={logo.file.childImageSharp.gatsbyImageData}
         alt="logo tojonirina"
         className="w-[10px]"
       />
-      <div className="flex w-1/3 items-center justify-between">
+      <div className="flex w-1/2 items-center justify-between">
         <Link to="/" activeClassName="text-bleuSky">
           Home
         </Link>
