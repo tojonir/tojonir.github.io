@@ -4,6 +4,7 @@ import Layout from "../containers/Layout";
 import { GatsbyImage } from "gatsby-plugin-image";
 import AboutCard from "../components/AboutCard";
 import ProjectCard from "../components/ProjectCard";
+import SendResume from "../components/SendResume";
 
 const IndexPage: React.FC<PageProps> = ({ data }) => {
   const { project } = data;
@@ -11,13 +12,16 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
     <Layout>
       <>
         <div className="flex justify-between items-center">
-          <h1 className="text-[45px] leading-[65px]">
-            Let's get into the
-            <br />
-            <span className="text-[90px] font-medium text-left text-bleuSky ml-[-3px]">
-              NEXT LEVEL
-            </span>
-          </h1>
+          <div>
+            <h1 className="text-[45px] leading-[65px]">
+              Let's get into the
+              <br />
+              <span className="text-[90px] font-medium text-left text-bleuSky ml-[-3px]">
+                NEXT LEVEL
+              </span>
+            </h1>
+            <SendResume placeholder="Enter email to receive my resume..." />
+          </div>
           <div className="w-1/2">
             <GatsbyImage
               image={data.profileImage.childImageSharp.gatsbyImageData}

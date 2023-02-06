@@ -4,6 +4,7 @@ import React from "react";
 import { FC } from "react";
 import { Link } from "gatsby";
 import SocialNetwork from "./SocialNetwork";
+import SendResume from "../components/SendResume";
 
 const Footer: FC = () => {
   return (
@@ -25,17 +26,7 @@ const Footer: FC = () => {
         <div className="w-1/4">
           <p className="font-semibold text-blue">Receive my resume</p>
           <div className="flex items-center justify-between mt-[20px]">
-            <div className="flex items-center rounded-[5px] bg-white py-1 px-2">
-              <input
-                type="text"
-                className="outline-none bg-transparent text-grey"
-                placeholder="Email"
-              />
-              <FontAwesomeIcon
-                icon={solid("paper-plane")}
-                className="text-grey"
-              />
-            </div>
+            <SendResume />
           </div>
         </div>
       </div>
