@@ -35,7 +35,8 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
         {/* about */}
         <section className="offset !py-10">
           <h3 className="title text-center">
-            I am passionate of <span className="text-bleuSky">Technology</span>
+            I am passionate about
+            <span className="text-bleuSky"> Technology</span>
           </h3>
           <div className="flex justify-between my-[5%] sm:flex-col">
             <AboutCard
@@ -47,8 +48,8 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
               }
               title="Leader"
               content="
-                Leadership is part of my life. It keeps me organised and motivate
-                to improve my skills every day. I am in control of what I do.
+              Leadership is part of my life. It keeps me organized and motivated to improve my skills every day. 
+              I am in control of what I do.
               "
             />
             <AboutCard
@@ -59,9 +60,9 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
                 />
               }
               title="Designer"
-              content="Design is the heart of a project. It is a cycle process
-              which insure the evolution of the application. Analytics-minded and creativity
-              are my strength as a designer
+              content="Design is the heart of a project. 
+              It is a cyclical process that ensures the evolution of the application. 
+              Analytics-mindedness and creativity are my strengths as a designer.
               "
             />
             <AboutCard
@@ -71,10 +72,10 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
                   alt=""
                 />
               }
-              title="Developper"
-              content="In 2019, I was curious about behind the scene.
-              I started with macro and writing scripts to speed up our task.
-              Until now, I gain lots of experiences"
+              title="Developer"
+              content="In 2019, I was interested in what was going on behind the scenes. 
+              I started with macros and writing scripts to speed up our task. 
+              I've had a lot of experiences up to this point."
             />
           </div>
         </section>
