@@ -9,7 +9,7 @@ import SocialNetwork from "../containers/SocialNetwork";
 const About: FC<PageProps> = ({ data }) => {
   return (
     <Layout>
-      <div className="grid grid-cols-2 py-[3%]">
+      <div className="grid grid-cols-2 offset !py-[3%]">
         <div className="">
           <p className="text-[44px]">About me</p>
           <p className="text-[19px]">

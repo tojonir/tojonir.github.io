@@ -6,7 +6,7 @@ import SocialNetwork from "../containers/SocialNetwork";
 const Contact = () => {
   return (
     <Layout>
-      <div className="w-full flex my-[5%] items-center justify-between">
+      <div className="w-full flex my-[5%] items-center justify-between offset">
         <div>
           <h3 className="text-[30px] font-semibold">
             I am glad to hear,
