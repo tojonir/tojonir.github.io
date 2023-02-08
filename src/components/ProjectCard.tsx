@@ -28,7 +28,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ data }) => {
       <div
         className={`${
           showModal ? "" : "hidden"
-        } absolute h-screen w-screen  bg-black bg-opacity-70 top-0 left-0 flex justify-center px-[130px]`}
+        } absolute h-screen w-screen  bg-black bg-opacity-70 top-0 left-0 flex justify-center px-[130px] z-20`}
       >
         <div className="bg-white w-full realtive overflow-y-scroll">
           <h3 className="p-3 text-[44px] font-bold text-purple-600 bg-black">
