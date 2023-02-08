@@ -14,7 +14,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
       id="main"
     >
       <Navigation />
-      <div className="px-[130px]">{children}</div>
+      <div className="">{children}</div>
       <Footer />
     </main>
   );

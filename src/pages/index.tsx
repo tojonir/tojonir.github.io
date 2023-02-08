@@ -5,18 +5,21 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import AboutCard from "../components/AboutCard";
 import ProjectCard from "../components/ProjectCard";
 import SendResume from "../components/SendResume";
+import IconTool from "../components/IconTool";
+import { brands } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 const IndexPage: React.FC<PageProps> = ({ data }) => {
   const { project } = data;
   return (
     <Layout>
       <>
-        <div className="flex justify-between items-center">
+        {/* head */}
+        <section className="flex justify-between items-center offset">
           <div>
-            <h1 className="text-[45px] leading-[65px]">
+            <h1 className="text-[30px] leading-[65px]">
               Let's get into the
               <br />
-              <span className="text-[90px] font-medium text-left text-bleuSky ml-[-3px]">
+              <span className="text-[70px] font-medium text-left text-bleuSky ml-[-3px]">
                 NEXT LEVEL
               </span>
             </h1>
@@ -28,60 +31,81 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
               alt=""
             />
           </div>
-        </div>
-        <h3 className="text-[44px] text-center mt-10">
-          I am passionate of <span className="text-bleuSky">Technology</span>
-        </h3>
-        <div className="flex justify-between my-[5%]">
-          <AboutCard
-            img={
-              <GatsbyImage
-                image={data.about_1.childImageSharp.gatsbyImageData}
-                alt=""
-              />
-            }
-            title="Leader"
-            content="I am a leader"
-          />
-          <AboutCard
-            img={
-              <GatsbyImage
-                image={data.about_2.childImageSharp.gatsbyImageData}
-                alt=""
-              />
-            }
-            title="Designer"
-            content="I am a leader"
-          />
-          <AboutCard
-            img={
-              <GatsbyImage
-                image={data.about_3.childImageSharp.gatsbyImageData}
-                alt=""
-              />
-            }
-            title="Developper"
-            content="I am a leader"
-          />
-        </div>
-        <h3 className="text-[44px] text-center mt-10">Project life cycle</h3>
-        <div className="flex justify-center my-[5%]">
-          <GatsbyImage
-            image={data.bg_2.childImageSharp.gatsbyImageData}
-            alt="skills"
-          />
-        </div>
-        <div className="my-[5%] border border-purple-600 rounded-[5px] p-5">
-          <div className="grid grid-cols-4 auto-rows-[250px]">
-            {project.nodes.slice(0, 3).map((item: any) => (
-              <ProjectCard data={item} />
-            ))}
+        </section>
+        {/* about */}
+        <section>
+          <h3 className="text-[44px] text-center mt-10">
+            I am passionate of <span className="text-bleuSky">Technology</span>
+          </h3>
+          <div className="flex justify-between my-[5%]">
+            <AboutCard
+              img={
+                <GatsbyImage
+                  image={data.about_1.childImageSharp.gatsbyImageData}
+                  alt=""
+                />
+              }
+              title="Leader"
+              content="I am a leader"
+            />
+            <AboutCard
+              img={
+                <GatsbyImage
+                  image={data.about_2.childImageSharp.gatsbyImageData}
+                  alt=""
+                />
+              }
+              title="Designer"
+              content="I am a leader"
+            />
+            <AboutCard
+              img={
+                <GatsbyImage
+                  image={data.about_3.childImageSharp.gatsbyImageData}
+                  alt=""
+                />
+              }
+              title="Developper"
+              content="I am a leader"
+            />
           </div>
+        </section>
+        {/* design */}
+        <section className="offset">
+          <h3 className="text-[44px] text-center mt-10">Design Skills</h3>
+          <div className="flex justify-center my-[5%]">
+            <GatsbyImage
+              image={data.bg_2.childImageSharp.gatsbyImageData}
+              alt="skills"
+              className="w-2/3"
+            />
+          </div>
+        </section>
+        {/* tech */}
+        <section className="bg-white flex flex-col items-center py-5">
+          <h3 className="text-[44px] text-center mt-10 text-[#350fa2]">
+            Tech Skills
+          </h3>
+          <GatsbyImage
+            image={data.tech.childImageSharp.gatsbyImageData}
+            alt="tojonirina skills"
+            className="w-2/3"
+          />
+        </section>
+        {/* project */}
+        <section className="offset">
+          <div className="my-[5%] border border-purple-600 rounded-[5px] p-5">
+            <div className="grid grid-cols-4 auto-rows-[250px]">
+              {project.nodes.slice(0, 3).map((item: any) => (
+                <ProjectCard data={item} />
+              ))}
+            </div>
 
-          <p className="text-right text-bleuSky">
-            <Link to="/project">See More</Link>
-          </p>
-        </div>
+            <p className="text-right text-bleuSky">
+              <Link to="/project">See More</Link>
+            </p>
+          </div>
+        </section>
       </>
     </Layout>
   );
@@ -114,6 +138,11 @@ export const query = graphql`
       }
     }
     bg_2: file(relativePath: { eq: "bg-2.png" }) {
+      childImageSharp {
+        gatsbyImageData(layout: CONSTRAINED)
+      }
+    }
+    tech: file(relativePath: { eq: "tech.png" }) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED)
       }

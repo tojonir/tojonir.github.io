@@ -29,7 +29,7 @@ const Navigation: FC = () => {
 
   return (
     <nav
-      className={`flex justify-between items-center h-[70px] px-[130px] sticky top-0 z-10 ${navBg}`}
+      className={`flex justify-between items-center h-[70px] offset sticky top-0 z-10 ${navBg}`}
     >
       <GatsbyImage
         image={logo.file.childImageSharp.gatsbyImageData}
