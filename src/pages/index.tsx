@@ -34,7 +34,7 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
         </section>
         {/* about */}
         <section className="offset !py-10">
-          <h3 className="text-[44px] text-center">
+          <h3 className="title text-center">
             I am passionate of <span className="text-bleuSky">Technology</span>
           </h3>
           <div className="flex justify-between my-[5%] sm:flex-col">
@@ -80,7 +80,7 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
         </section>
         {/* design */}
         <section className="offset">
-          <h3 className="text-[44px] text-center">Design Skills</h3>
+          <h3 className="title text-center">Design Skills</h3>
           <div className="flex justify-center my-[5%]">
             <GatsbyImage
               image={data.bg_2.childImageSharp.gatsbyImageData}
@@ -92,9 +92,7 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
         {/* tech */}
         <section className="bg-white !py-5">
           <div className="offset flex flex-col items-center">
-            <h3 className="text-[44px] text-center text-[#350fa2]">
-              Tech Skills
-            </h3>
+            <h3 className="title text-center text-[#350fa2]">Tech Skills</h3>
             <GatsbyImage
               image={data.tech.childImageSharp.gatsbyImageData}
               alt="tojonirina skills"

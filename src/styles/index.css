@@ -24,8 +24,15 @@ body {
   margin: auto;
 }
 
+.title {
+  font-size: 44px;
+}
+
 @media screen and (max-width: 960px) {
   .offset {
     padding: 0px 20px;
+  }
+  .title {
+    font-size: 32px;
   }
 }
