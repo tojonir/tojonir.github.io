@@ -8,7 +8,7 @@ const Project: FC<PageProps> = ({ data }) => {
   const { project } = data;
   return (
     <Layout>
-      <div className="grid grid-cols-4 auto-rows-[250px] my-[5%] offset">
+      <div className="grid grid-cols-4 sm:grid-cols-1 auto-rows-[250px] !my-[5%] offset">
         {project.nodes.map((item: any) => (
           <ProjectCard data={item} />
         ))}
