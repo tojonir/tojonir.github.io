@@ -9,8 +9,8 @@ import SocialNetwork from "../containers/SocialNetwork";
 const About: FC<PageProps> = ({ data }) => {
   return (
     <Layout>
-      <div className="grid grid-cols-2 offset !py-[3%]">
-        <div className="">
+      <div className="flex sm:flex-col-reverse  offset !py-[3%]">
+        <div className="p-5 sm:p-0">
           <p className="text-[44px]">About me</p>
           <p className="text-[19px] text-justify">
             I am a{" "}
@@ -47,7 +47,7 @@ const About: FC<PageProps> = ({ data }) => {
             <span className="text-bleuSky">continious delivery</span>.
             <br />
             <br /> In Order to keep me up-to-date, I master some software apart
-            <div className="flex items-center justify-between w-2/3 py-2">
+            <div className="flex items-center sm:flex-wrap justify-between w-2/3 sm:w-full py-2">
               <IconTool
                 icon={brands("slack")}
                 title="slack"
@@ -91,7 +91,7 @@ const About: FC<PageProps> = ({ data }) => {
           </p>
         </div>
         <div className="flex flex-col items-center">
-          <div className="w-1/2">
+          <div className="">
             <GatsbyImage
               image={data.img.childImageSharp.gatsbyImageData}
               alt="tojonirina"

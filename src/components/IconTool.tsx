@@ -21,7 +21,7 @@ const IconTool: FC<IconToolProps> = ({
     <a
       href={link}
       target="_blank"
-      className="flex flex-col items-center justify-center group"
+      className="flex flex-col items-center justify-center group mr-5 mb-5"
     >
       <FontAwesomeIcon
         icon={icon}
@@ -29,9 +29,9 @@ const IconTool: FC<IconToolProps> = ({
         className="group-hover:text-purple-600"
         size={iconSize}
       />
-      <p className={`text-[${textSize}] group-hover:text-purple-600`}>
+      <span className={`text-[${textSize}] group-hover:text-purple-600`}>
         {title}
-      </p>
+      </span>
     </a>
   );
 };

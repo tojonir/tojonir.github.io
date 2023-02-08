@@ -6,9 +6,9 @@ import SocialNetwork from "../containers/SocialNetwork";
 const Contact = () => {
   return (
     <Layout>
-      <div className="w-full flex my-[5%] items-center justify-between offset">
-        <div>
-          <h3 className="text-[30px] font-semibold">
+      <div className="w-full flex sm:flex-col !my-[5%] items-center justify-between offset">
+        <div className="sm:w-full">
+          <h3 className="text-[30px] sm:text-[25px] font-semibold">
             I am glad to hear,
             <br />
             Say more about your Project,
@@ -18,7 +18,7 @@ const Contact = () => {
           <p className="text-gray-400">Reach me on social network</p>
           <SocialNetwork />
         </div>
-        <div className="grid grid-cols-1 gap-5 w-1/2">
+        <div className="grid grid-cols-1 gap-5 w-1/2 sm:w-full sm:pt-5">
           <h4 className="text-[20px] font-medium">Drop me some word</h4>
           <input
             className="px-2 py-1 rounded-[5px] outline-none text-gray-600"

@@ -14,7 +14,7 @@ const SocialNetwork: FC<SocialNetworkProps> = ({
   iconStyle = "hover:text-purple-600",
 }) => {
   return (
-    <div className="flex items-center justify-between mt-[20px]">
+    <div className="flex items-center justify-between mt-[20px] max-w-[300px]">
       <a href="" target="_blank">
         <FontAwesomeIcon
           icon={brands("instagram")}
