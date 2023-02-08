@@ -15,38 +15,40 @@ const About: FC<PageProps> = ({ data }) => {
           <p className="text-[19px] text-justify">
             I am a{" "}
             <span className="font-semibold text-bleuSky">
-              self-taugth developer
-            </span>
-            , pasionate about technology especially Artificial Inteligence. I am
-            currently a freelancer seeking for new opportunities.
+              self-taught developer
+            </span>{" "}
+            who is passionate about technology, especially artificial
+            intelligence. I am currently a freelancer seeking new opportunities.
             <br />
-            <br />I have been in this field over 4 yers now.During that time I
-            have passed through many challenges which strengthn my skills,
+            <br />I have been in this field for over 4 years now. I have passed
+            through many challenges that have strengthened my skills during that
+            time.{" "}
             <span className="italic text-bleuSky">
-              ”which does't kill you makes you stronger”
-            </span>
-            . I hope one day I will have my own tech company.
+              "What doesn't kill you makes you stronger."
+            </span>{" "}
+            I hope one day I will have my own tech company.
             <br />
-            <br />I strongly believe that my reliable personality,ponctuality,
-            fast-learning are the pillar of my proffessionalism and development.
             <br />
-            <br /> The best part i love as a developer is that there is always
-            new <span className="text-bleuSky">challenges</span>,unendless
-            creativity,to face.Moreover, huge{" "}
-            <span className="text-bleuSky">community</span> of developer is very
-            friendly,no matter where they come from either the age.
+            My reliable personality, punctuality, and fast learning are the
+            pillars of my professionalism and development.
+            <br />
+            <br /> The best part about being a developer is that there are
+            always new <span className="text-bleuSky"> challenges </span>and
+            opportunities for creativity. Moreover, a huge{" "}
+            <span className="text-bleuSky"> community </span> of developers is
+            very friendly, no matter where they come from or their age.
             <br />
             <br /> I love working with different people from different
-            background. However, working as a team might be a nightmare without
-            a rule and methodology. Therefore, I use the{" "}
+            backgrounds. However, working as a team might be a nightmare without
+            rules and methodology. Therefore, I use the{" "}
             <span className=" font-semibold text-bleuSky">
               Agile Methodology
             </span>{" "}
-            to manage project. It has a huge impact in each team player to
-            achieve the goal and insure the{" "}
-            <span className="text-bleuSky">continious delivery</span>.
+            to manage projects. It has a huge impact on each team member to
+            achieve the goal and ensure{" "}
+            <span className="text-bleuSky">continuous delivery.</span>
             <br />
-            <br /> In Order to keep me up-to-date, I master some software apart
+            <br /> I use some software to keep me up-to-date.
             <div className="flex items-center sm:flex-wrap justify-between w-2/3 sm:w-full py-2">
               <IconTool
                 icon={brands("slack")}
@@ -85,7 +87,7 @@ const About: FC<PageProps> = ({ data }) => {
               />
             </div>
             <br />
-            <br /> Thanks for visiting me,
+            <br /> Thank you for your visit,
             <br /> Feel free to ask me anything, I am glad to help.
             <br /> Also I am impatient to hear about your next project.
           </p>
