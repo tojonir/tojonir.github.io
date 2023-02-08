@@ -8,7 +8,7 @@ import SendResume from "../components/SendResume";
 
 const Footer: FC = () => {
   return (
-    <div className="flex flex-col justify-between offset pt-[5%] pb-5 h-[270px] bg-bleuDark">
+    <footer className="flex flex-col justify-between offset pt-[5%] pb-5 h-[270px] bg-bleuDark">
       <div className="w-full flex justify-between m-auto">
         <div className="w-1/4">
           <p className="font-semibold text-blue">Reach me on</p>
@@ -33,7 +33,7 @@ const Footer: FC = () => {
       <p className="text-[12px] text-center text-grey">
         Copyright Tojonirina 2023
       </p>
-    </div>
+    </footer>
   );
 };
 
