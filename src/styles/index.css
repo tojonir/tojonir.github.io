@@ -19,5 +19,13 @@ body {
 }
 
 .offset {
+  max-width: 1336px;
   padding: 0px 130px;
+  margin: auto;
+}
+
+@media screen and (max-width: 960px) {
+  .offset {
+    padding: 0px 20px;
+  }
 }

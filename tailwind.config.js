@@ -20,6 +20,17 @@ module.exports = {
         bleuSky: "#00DEFF",
         grey: "#B9C2C8",
       },
+      screens: {
+        lg: {
+          min: "960px",
+        },
+        md: {
+          max: "960px",
+        },
+        sm: {
+          max: "550px",
+        },
+      },
     },
   },
   plugins: ["gatsby-plugin-postcss"],
