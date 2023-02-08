@@ -14,18 +14,18 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
     <Layout>
       <>
         {/* head */}
-        <section className="flex justify-between items-center offset">
-          <div>
+        <section className="flex justify-between items-center offset sm:flex-col-reverse">
+          <div className="sm:w-full">
             <h1 className="text-[30px] leading-[65px]">
               Let's get into the
               <br />
-              <span className="text-[70px] font-medium text-left text-bleuSky ml-[-3px]">
+              <span className="text-[70px] sm:text-[50px] font-medium text-left text-bleuSky ml-[-3px]">
                 NEXT LEVEL
               </span>
             </h1>
             <SendResume placeholder="Enter email to receive my resume..." />
           </div>
-          <div className="w-1/2">
+          <div className="w-1/2 sm:w-full">
             <GatsbyImage
               image={data.profileImage.childImageSharp.gatsbyImageData}
               alt=""
@@ -33,11 +33,11 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
           </div>
         </section>
         {/* about */}
-        <section className="offset">
-          <h3 className="text-[44px] text-center mt-10">
+        <section className="offset !py-10">
+          <h3 className="text-[44px] text-center">
             I am passionate of <span className="text-bleuSky">Technology</span>
           </h3>
-          <div className="flex justify-between my-[5%]">
+          <div className="flex justify-between my-[5%] sm:flex-col">
             <AboutCard
               img={
                 <GatsbyImage
@@ -80,30 +80,32 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
         </section>
         {/* design */}
         <section className="offset">
-          <h3 className="text-[44px] text-center mt-10">Design Skills</h3>
+          <h3 className="text-[44px] text-center">Design Skills</h3>
           <div className="flex justify-center my-[5%]">
             <GatsbyImage
               image={data.bg_2.childImageSharp.gatsbyImageData}
               alt="skills"
-              className="w-2/3"
+              className="w-2/3 sm:w-full"
             />
           </div>
         </section>
         {/* tech */}
-        <section className="bg-white flex flex-col items-center py-5">
-          <h3 className="text-[44px] text-center mt-10 text-[#350fa2]">
-            Tech Skills
-          </h3>
-          <GatsbyImage
-            image={data.tech.childImageSharp.gatsbyImageData}
-            alt="tojonirina skills"
-            className="w-2/3"
-          />
+        <section className="bg-white !py-5">
+          <div className="offset flex flex-col items-center">
+            <h3 className="text-[44px] text-center text-[#350fa2]">
+              Tech Skills
+            </h3>
+            <GatsbyImage
+              image={data.tech.childImageSharp.gatsbyImageData}
+              alt="tojonirina skills"
+              className="w-2/3 sm:w-full"
+            />
+          </div>
         </section>
         {/* project */}
         <section className="offset">
           <div className="my-[5%] border border-purple-600 rounded-[5px] p-5">
-            <div className="grid grid-cols-4 auto-rows-[250px]">
+            <div className="grid grid-cols-4 auto-rows-[250px] sm:grid-cols-1">
               {project.nodes.slice(0, 3).map((item: any) => (
                 <ProjectCard data={item} />
               ))}
