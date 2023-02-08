@@ -31,6 +31,12 @@ const config: GatsbyConfig = {
       },
       __key: "utils",
     },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/images/logo.png",
+      },
+    },
   ],
 };
 

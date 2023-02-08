@@ -7,13 +7,17 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Roboto"],
+      },
       colors: {
         transparent: "#00000000",
         balck: "#000000",
         white: "#ffffff",
         orange: "#FFCC00",
+        blue: "#0096EB",
         bleuDark: "#110630",
-        bleuSky: "#04B6E9",
+        bleuSky: "#00DEFF",
         grey: "#B9C2C8",
       },
     },

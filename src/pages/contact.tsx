@@ -1,3 +1,4 @@
+import { HeadFC } from "gatsby";
 import React from "react";
 import Layout from "../containers/Layout";
 import SocialNetwork from "../containers/SocialNetwork";
@@ -5,7 +6,7 @@ import SocialNetwork from "../containers/SocialNetwork";
 const Contact = () => {
   return (
     <Layout>
-      <div className="w-full flex my-[5%] items-center justify-between">
+      <div className="w-full flex my-[5%] items-center justify-between offset">
         <div>
           <h3 className="text-[30px] font-semibold">
             I am glad to hear,
@@ -31,13 +32,13 @@ const Contact = () => {
             className="px-2 py-1 rounded-[5px] outline-none text-gray-600"
             placeholder="Subject"
           />
-          <p className="text-bleuSky">Tell me more</p>
+          <p className="text-blue">Tell me more</p>
           <textarea
             className="px-2 py-1 rounded-[5px] h-[150px] outline-none text-gray-600"
             placeholder="Message"
           />
           <div>
-            <button className="bg-purple-700 px-10 py-1 rounded-[5px] float-right">
+            <button className="bg-blue px-10 py-1 rounded-[5px] float-right">
               Send
             </button>
           </div>
@@ -47,3 +48,5 @@ const Contact = () => {
   );
 };
 export default Contact;
+
+export const Head: HeadFC = () => <title>Contact</title>;

@@ -10,7 +10,14 @@ body {
   overflow: hidden;
   color: #fff;
 }
+* {
+  border-radius: 5px;
+}
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.offset {
+  padding: 0px 130px;
 }
