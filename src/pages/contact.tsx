@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <Layout>
       <div className="w-full flex sm:flex-col !my-[5%] items-center justify-between offset">
-        <div className="w-full">
+        <div className="sm:w-full">
           <h3 className="text-[30px] sm:text-[25px] font-semibold">
             I am glad to hear,
             <br />
