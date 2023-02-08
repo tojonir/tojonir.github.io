@@ -12,7 +12,7 @@ const About: FC<PageProps> = ({ data }) => {
       <div className="grid grid-cols-2 offset !py-[3%]">
         <div className="">
           <p className="text-[44px]">About me</p>
-          <p className="text-[19px]">
+          <p className="text-[19px] text-justify">
             I am a{" "}
             <span className="font-semibold text-bleuSky">
               self-taugth developer
