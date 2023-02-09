@@ -1,7 +1,17 @@
 [
   {
     "name": "Sales Poster",
-    "description": "",
+    "category": "graphic-2d",
+    "thumb": "../images/feature/poster-1.jpg",
+    "tag": ["../images/tag/ps.png", "../images/tag/ai.png"],
+    "content": [
+      "../images/feature/poster-1.jpg",
+      "../images/feature/poster-2.jpg"
+    ]
+  },
+  {
+    "name": "Case 1",
+    "category": "ux",
     "thumb": "../images/feature/poster-1.jpg",
     "tag": ["../images/tag/ps.png", "../images/tag/ai.png"],
     "content": [
