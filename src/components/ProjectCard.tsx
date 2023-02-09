@@ -2,6 +2,7 @@ import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React, { FC, useState } from "react";
+import SocialNetwork from "../containers/SocialNetwork";
 
 interface ProjectCardProps {
   data: any;
@@ -28,39 +29,47 @@ const ProjectCard: FC<ProjectCardProps> = ({ data }) => {
       <div
         className={`${
           showModal ? "" : "hidden"
-        } absolute h-screen w-screen  bg-black bg-opacity-70 top-0 left-0 flex justify-center px-[130px]`}
+        } absolute h-screen w-screen overflow-hidden  bg-black bg-opacity-70 top-0 left-0 flex justify-center z-20`}
       >
-        <div className="bg-white w-full realtive overflow-y-scroll">
-          <h3 className="p-3 text-[44px] font-bold text-purple-600 bg-black">
-            {data.name}
-          </h3>
-          {data.content.map((tag: any) => (
-            <div>
-              <GatsbyImage
-                image={tag.childImageSharp.gatsbyImageData}
-                alt={data.name}
-                className="w-full"
-              />
-            </div>
-          ))}
-          <div className="absolute bottom-0 left-[91%]">
-            {data.tag.map((tag: any) => (
+        <div className="bg-white flex flex-col justify-between max-w-[1000px] md:mx-5 realtive overflow-y-scroll">
+          <div>
+            <h3 className="p-3 text-[44px] sm:text-[20px] font-bold text-purple-600 bg-black">
+              {data.name}
+            </h3>
+            {data.content.map((tag: any) => (
               <div>
                 <GatsbyImage
                   image={tag.childImageSharp.gatsbyImageData}
                   alt={data.name}
-                  className="w-[50px]"
+                  className="w-full"
                 />
               </div>
             ))}
-            <div
-              className="bg-red-600 p-2 flex items-center justify-center hover:bg-opacity-80 cursor-pointer rounded-[2px]"
-              onClick={() => setShowModal(false)}
-            >
-              <div className="w-[30px] h-[30px] rounded-[5px] border border-white flex items-center justify-center">
-                <FontAwesomeIcon icon={solid("close")} />
+            <div className="absolute bottom-0 right-5">
+              {data.tag.map((tag: any) => (
+                <div>
+                  <GatsbyImage
+                    image={tag.childImageSharp.gatsbyImageData}
+                    alt={data.name}
+                    className="w-[50px]"
+                  />
+                </div>
+              ))}
+              <div
+                className="bg-red-600 p-2 flex items-center justify-center hover:bg-opacity-80 cursor-pointer rounded-[2px]"
+                onClick={() => setShowModal(false)}
+              >
+                <div className="w-[30px] h-[30px] rounded-[5px] border border-white flex items-center justify-center">
+                  <FontAwesomeIcon icon={solid("close")} />
+                </div>
               </div>
             </div>
+          </div>
+          <div className="flex flex-col items-center w-full p-5">
+            <h3 className="text-bleuDark font-medium text-[24px]">
+              Contact me now on
+            </h3>
+            <SocialNetwork iconStyle="text-bleuDark hover:text-purple-600" />
           </div>
         </div>
       </div>
