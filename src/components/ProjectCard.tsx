@@ -9,7 +9,6 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: FC<ProjectCardProps> = ({ data }) => {
-  console.log("data", data);
   const [showModal, setShowModal] = useState<boolean>(false);
   return (
     <>
@@ -29,7 +28,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ data }) => {
       <div
         className={`${
           showModal ? "" : "hidden"
-        } absolute h-screen w-screen overflow-hidden  bg-black bg-opacity-70 top-0 left-0 flex justify-center z-20`}
+        } absolute h-screen w-screen overflow-hidden  bg-black bg-opacity-70 top-0 left-0 flex justify-center z-50`}
       >
         <div className="bg-white flex flex-col justify-between max-w-[1000px] md:mx-5 realtive overflow-y-scroll">
           <div>

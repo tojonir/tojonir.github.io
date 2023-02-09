@@ -41,7 +41,7 @@ const Navigation: FC = () => {
   }, []);
 
   return (
-    <nav className={`flex items-center h-[70px] sticky top-0 z-10 ${navBg}`}>
+    <nav className={`flex items-center h-[70px] sticky top-0 z-40 ${navBg}`}>
       <div className="offset flex justify-between items-center w-full">
         <Logo />
 
