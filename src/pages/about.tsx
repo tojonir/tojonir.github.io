@@ -66,6 +66,11 @@ const About: FC<PageProps> = ({ data }) => {
                 link="https://jira.atlassian.com/"
               />
               <IconTool
+                icon={brands("trello")}
+                title="trello"
+                link="https://trello.com/"
+              />
+              <IconTool
                 icon={brands("git")}
                 title="git"
                 link="https://git-scm.com/"
@@ -74,16 +79,6 @@ const About: FC<PageProps> = ({ data }) => {
                 icon={brands("github")}
                 title="github"
                 link="https://github.com/"
-              />
-              <IconTool
-                icon={brands("stack-overflow")}
-                title="stackoverflow"
-                link="https://stackoverflow.com/"
-              />
-              <IconTool
-                icon={brands("docker")}
-                title="docker"
-                link="https://www.docker.com/"
               />
             </div>
             <br />
