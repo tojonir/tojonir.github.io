@@ -5,17 +5,9 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import anime from "animejs/lib/anime.es.js";
+import Logo from "../components/Logo";
 
 const Navigation: FC = () => {
-  const logo = useStaticQuery(graphql`
-    query MyQuery {
-      file(relativePath: { eq: "logo.png" }) {
-        childImageSharp {
-          gatsbyImageData(layout: FIXED, width: 30)
-        }
-      }
-    }
-  `);
   const [navBg, setNavBg] = useState<string>("");
   const [mobileMenu, setMobileMenu] = useState<boolean>(false);
 
@@ -51,11 +43,8 @@ const Navigation: FC = () => {
   return (
     <nav className={`flex items-center h-[70px] sticky top-0 z-10 ${navBg}`}>
       <div className="offset flex justify-between items-center w-full">
-        <GatsbyImage
-          image={logo.file.childImageSharp.gatsbyImageData}
-          alt="logo tojonirina"
-          className="w-[10px]"
-        />
+        <Logo />
+
         <div className="flex w-1/2 items-center justify-between md:hidden">
           <Link to="/" activeClassName="text-bleuSky">
             Home
@@ -85,11 +74,9 @@ const Navigation: FC = () => {
         id="mobileMenuElement"
         className="flex flex-col absolute top-0 right-[100%] w-2/3 h-screen bg-[#350fa2] lg:hidden"
       >
-        <GatsbyImage
-          image={logo.file.childImageSharp.gatsbyImageData}
-          alt="logo tojonirina"
-          className="w-[10px] m-4"
-        />
+        <div className="p-3">
+          <Logo />
+        </div>
         <Link to="/" activeClassName="text-bleuSky" className="m-4">
           Home
         </Link>
