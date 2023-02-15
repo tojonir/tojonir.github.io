@@ -16,3 +16,5 @@ export const category = [
     slug: "ux-ui",
   },
 ];
+
+export const serverUrl = "http://localhost:9000";
