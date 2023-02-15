@@ -15,15 +15,25 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
       <>
         {/* head */}
         <section className="flex justify-between items-center offset sm:flex-col-reverse">
-          <div className="sm:w-full">
-            <h1 className="text-[30px] leading-[65px]">
-              Let's get into the
+          <div className="w-1/2 sm:w-full">
+            <h1 className="text-[22px] leading-[40px]">
+              Hello,
               <br />
-              <span className="text-[70px] sm:text-[50px] font-medium text-left text-bleuSky ml-[-3px]">
-                NEXT LEVEL
+              <span className="text-[44px] sm:text-[50px] font-medium text-left text-bleuSky ml-[-3px]">
+                I'm Tojonirina
               </span>
             </h1>
-            <SendResume placeholder="Enter email to receive my resume..." />
+            <p className=" mb-5 text-gray-400">
+              I am a self-taught software developer who is passionate about
+              technology, especially artificial intelligence. I am currently a
+              freelancer seeking new opportunities.
+            </p>
+            <Link
+              to="/contact"
+              className="bg-blue py-2 px-3 text-white polygone duration-75 hover:mb-[4px]"
+            >
+              Contact me now
+            </Link>
           </div>
           <div className="w-1/2 sm:w-full">
             <GatsbyImage
