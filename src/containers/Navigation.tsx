@@ -46,18 +46,30 @@ const Navigation: FC = () => {
         <Logo />
 
         <div className="flex w-1/2 items-center justify-between md:hidden">
-          <Link to="/" activeClassName="text-bleuSky">
+          <Link
+            to="/"
+            activeClassName="text-bleuSky"
+            className="duration-75 hover:mb-[4px]"
+          >
             Home
           </Link>
-          <Link to="/about" activeClassName="text-bleuSky">
+          <Link
+            to="/about"
+            activeClassName="text-bleuSky"
+            className="duration-75 hover:mb-[4px]"
+          >
             About
           </Link>
-          <Link to="/project" activeClassName="text-bleuSky">
+          <Link
+            to="/project"
+            activeClassName="text-bleuSky"
+            className="duration-75 hover:mb-[4px]"
+          >
             Project
           </Link>
           <Link
             to="/contact"
-            className="border border-blue py-1 px-3 text-blue"
+            className="bg-blue py-1 px-3 text-white polygone duration-75 hover:mb-[4px]"
           >
             Contact
           </Link>
