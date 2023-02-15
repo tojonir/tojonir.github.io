@@ -44,10 +44,6 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
         </section>
         {/* about */}
         <section className="offset !py-10">
-          <h3 className="title text-center">
-            I am passionate about
-            <span className="text-bleuSky"> Technology</span>
-          </h3>
           <div className="flex justify-between my-[5%] sm:flex-col">
             <AboutCard
               img={
@@ -59,7 +55,7 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
               title="Leader"
               content="
               Leadership is part of my life. It keeps me organized and motivated to improve my skills every day. 
-              I am in control of what I do.
+            
               "
             />
             <AboutCard
@@ -71,8 +67,7 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
               }
               title="Designer"
               content="Design is the heart of a project. 
-              It is a cyclical process that ensures the evolution of the application. 
-              Analytics-mindedness and creativity are my strengths as a designer.
+              It is a cyclical process that ensures the evolution of the application.
               "
             />
             <AboutCard
@@ -84,8 +79,7 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
               }
               title="Developer"
               content="In 2019, I was interested in what was going on behind the scenes. 
-              I started with macros and writing scripts to speed up our task. 
-              I've had a lot of experiences up to this point."
+              I started with macros and writing scripts."
             />
           </div>
         </section>
