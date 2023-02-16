@@ -28,6 +28,18 @@ body {
   font-size: 44px;
 }
 
+.polygone {
+  border-radius: 0px !important;
+  clip-path: polygon(
+    0% 30%,
+    10% 0%,
+    100% 0%,
+    100% 70%,
+    90% 100%,
+    10% 100%,
+    0% 100%
+  );
+}
 @media screen and (max-width: 960px) {
   .offset {
     padding: 0px 20px;

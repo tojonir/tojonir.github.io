@@ -9,7 +9,7 @@ interface AboutCardProps {
 
 const AboutCard: FC<AboutCardProps> = ({ img, title, content }) => {
   return (
-    <div className="w-1/3 sm:w-full flex flex-col items-center p-6 h-[350px] sm:h-fit">
+    <div className="w-1/3 sm:w-full flex flex-col items-center p-6 h-[250px] sm:h-fit duration-200 hover:shadow-md hover:shadow-purple-600 cursor-pointer">
       <div className="w-[80px]">{img}</div>
       <p className="text-center font-bold text-[22px] py-3">{title}</p>
       <p className="text-justify">{content}</p>

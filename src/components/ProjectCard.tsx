@@ -13,13 +13,13 @@ const ProjectCard: FC<ProjectCardProps> = ({ data }) => {
   return (
     <>
       <div
-        className="relative group cursor-pointer rounded-[2px] overflow-hidden"
+        className="relative group cursor-pointer overflow-hidden"
         onClick={() => setShowModal(true)}
       >
         <GatsbyImage
           image={data.thumb.childImageSharp.gatsbyImageData}
           alt={data.name}
-          className="h-full"
+          className="h-full duration-100 group-hover:scale-110"
         />
         <div className="absolute top-0 w-full h-full flex items-end  bg-gradient-to-t from-black to-transparent">
           <p className="font-semibold p-5">{data.name}</p>
