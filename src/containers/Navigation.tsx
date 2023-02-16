@@ -84,7 +84,7 @@ const Navigation: FC = () => {
       </div>
       <div
         id="mobileMenuElement"
-        className="flex flex-col absolute top-0 right-[100%] w-2/3 h-screen bg-[#350fa2] lg:hidden"
+        className="flex flex-col absolute top-0 right-full w-2/3 h-screen bg-[#350fa2] lg:hidden"
       >
         <div className="p-3">
           <Logo />
