@@ -7,6 +7,7 @@ import ProjectCard from "../components/ProjectCard";
 import SendResume from "../components/SendResume";
 import IconTool from "../components/IconTool";
 import { brands } from "@fortawesome/fontawesome-svg-core/import.macro";
+import DesignCard from "../components/DesignCard";
 
 const IndexPage: React.FC<PageProps> = ({ data }) => {
   const { project } = data;
@@ -93,6 +94,33 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
               className="w-2/3 sm:w-full"
             />
           </div>
+          <div className="flex flex-wrap pb-10">
+            <DesignCard
+              title="Adobe Xd"
+              img={data.xd.childImageSharp.gatsbyImageData}
+              bg="bg-pink-400"
+            />
+            <DesignCard
+              title="Figma"
+              img={data.figma.childImageSharp.gatsbyImageData}
+              bg="bg-bleuSky"
+            />
+            <DesignCard
+              title="Photoshop"
+              img={data.ps.childImageSharp.gatsbyImageData}
+              bg="bg-sky-600"
+            />
+            <DesignCard
+              title="Illustrator"
+              img={data.ai.childImageSharp.gatsbyImageData}
+              bg="bg-[#DC6920]"
+            />
+            <DesignCard
+              title="After Effect"
+              img={data.ae.childImageSharp.gatsbyImageData}
+              bg="bg-[#CF96FD]"
+            />
+          </div>
         </section>
         {/* tech */}
         <section className="bg-white !py-5">
@@ -156,6 +184,31 @@ export const query = graphql`
       }
     }
     tech: file(relativePath: { eq: "tech.png" }) {
+      childImageSharp {
+        gatsbyImageData(layout: CONSTRAINED)
+      }
+    }
+    ps: file(relativePath: { eq: "tag/ps.png" }) {
+      childImageSharp {
+        gatsbyImageData(layout: CONSTRAINED)
+      }
+    }
+    xd: file(relativePath: { eq: "tag/xd.png" }) {
+      childImageSharp {
+        gatsbyImageData(layout: CONSTRAINED)
+      }
+    }
+    ai: file(relativePath: { eq: "tag/ai.png" }) {
+      childImageSharp {
+        gatsbyImageData(layout: CONSTRAINED)
+      }
+    }
+    figma: file(relativePath: { eq: "tag/figma.png" }) {
+      childImageSharp {
+        gatsbyImageData(layout: CONSTRAINED)
+      }
+    }
+    ae: file(relativePath: { eq: "tag/ae.png" }) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED)
       }
