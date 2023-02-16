@@ -4,9 +4,6 @@ import Layout from "../containers/Layout";
 import { GatsbyImage } from "gatsby-plugin-image";
 import AboutCard from "../components/AboutCard";
 import ProjectCard from "../components/ProjectCard";
-import SendResume from "../components/SendResume";
-import IconTool from "../components/IconTool";
-import { brands } from "@fortawesome/fontawesome-svg-core/import.macro";
 import DesignCard from "../components/DesignCard";
 
 const IndexPage: React.FC<PageProps> = ({ data }) => {
