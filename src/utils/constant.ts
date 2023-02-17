@@ -17,4 +17,4 @@ export const category = [
   },
 ];
 
-export const serverUrl = "https://mail-ryom.onrender.com/";
+export const serverUrl = "https://mail-ryom.onrender.com";
