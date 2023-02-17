@@ -1,0 +1,7 @@
+yarn clean
+yarn build
+git checkout master
+xcopy /s public\*.* .
+git add .
+git commit -m"deploy"
+git push
