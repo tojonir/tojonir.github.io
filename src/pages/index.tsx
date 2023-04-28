@@ -22,9 +22,10 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
               </span>
             </h1>
             <p className=" mb-5 text-gray-400">
-              I am a self-taught software developer who is passionate about
-              technology, especially artificial intelligence. I am currently a
-              freelancer seeking new opportunities.
+              I am a self-taught developer passionate about technology, I didn't
+              have the chance to go to university, but the experience I had
+              after working in a company help me to realize my dream. The road
+              is still long, but i'm ready
             </p>
             <Link
               to="/contact"

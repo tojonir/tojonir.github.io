@@ -17,8 +17,9 @@ const About: FC<PageProps> = ({ data }) => {
             <span className="font-semibold text-bleuSky">
               self-taught developer
             </span>{" "}
-            who is passionate about technology, especially artificial
-            intelligence. I am currently a freelancer seeking new opportunities.
+            who is passionate about technology, I didn't have the chance to go
+            to university, but the experience I had after working in a company
+            help me to realize my dream. The road is still long, but i'm ready
             <br />
             <br />I have been in this field for over 4 years now. I have passed
             through many challenges that have strengthened my skills during that
