@@ -1,17 +1,26 @@
 [
   {
-    "name": "Sales Poster",
-    "category": "graphic-2d",
-    "thumb": "../images/feature/poster-1.jpg",
-    "tag": ["../images/tag/ps.png", "../images/tag/ai.png"],
+    "name": "tuix-design",
+    "category": "web",
+    "thumb": "../images/feature/tuix.png",
+    "tag": [],
+    "content": ["../images/feature/tuix.png", "../images/feature/tuix-1.png"],
+    "link": "https://tuix-design.github.io"
+  },
+  {
+    "name": "authT",
+    "category": "web",
+    "thumb": "../images/feature/authT.png",
+    "tag": [],
     "content": [
-      "../images/feature/poster-1.jpg",
-      "../images/feature/poster-2.jpg"
+      "../images/feature/authT.png",
+      "../images/feature/authT-desc.png",
+      "../images/feature/authT-1.png"
     ]
   },
   {
-    "name": "Case 1",
-    "category": "ux",
+    "name": "Sales Poster Mockup",
+    "category": "2d",
     "thumb": "../images/feature/poster-1.jpg",
     "tag": ["../images/tag/ps.png", "../images/tag/ai.png"],
     "content": [

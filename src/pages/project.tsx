@@ -62,11 +62,11 @@ const Project: FC<PageProps> = ({ data }) => {
           </div>
         </div>
         <div className="grid grid-cols-4 gap-10 sm:grid-cols-1 auto-rows-[250px] !my-[5%]">
-          {project.nodes.map((item: any) =>
+          {project.nodes.map((item: any, i: number) =>
             filter.length === 0 ? (
-              <ProjectCard data={item} />
+              <ProjectCard key={i} data={item} />
             ) : filter.indexOf(item.category) !== -1 ? (
-              <ProjectCard data={item} />
+              <ProjectCard key={i} data={item} />
             ) : null
           )}
         </div>
@@ -85,6 +85,7 @@ export const query = graphql`
       nodes {
         name
         category
+        link
         tag {
           childImageSharp {
             gatsbyImageData(layout: CONSTRAINED)

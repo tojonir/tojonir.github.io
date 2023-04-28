@@ -10,6 +10,7 @@ interface ProjectCardProps {
 
 const ProjectCard: FC<ProjectCardProps> = ({ data }) => {
   const [showModal, setShowModal] = useState<boolean>(false);
+  console.log(data);
   return (
     <>
       <div
@@ -32,11 +33,11 @@ const ProjectCard: FC<ProjectCardProps> = ({ data }) => {
       >
         <div className="bg-white flex flex-col justify-between max-w-[1000px] md:mx-5 realtive overflow-y-scroll">
           <div>
-            <h3 className="p-3 text-[44px] sm:text-[20px] font-bold text-purple-600 bg-black">
+            <h3 className="p-3 text-[44px] sm:text-[20px] font-bold text-purple-600 bg-black rounded-none">
               {data.name}
             </h3>
-            {data.content.map((tag: any) => (
-              <div>
+            {data.content.map((tag: any, i: number) => (
+              <div key={i}>
                 <GatsbyImage
                   image={tag.childImageSharp.gatsbyImageData}
                   alt={data.name}
@@ -45,8 +46,8 @@ const ProjectCard: FC<ProjectCardProps> = ({ data }) => {
               </div>
             ))}
             <div className="absolute bottom-0 right-5">
-              {data.tag.map((tag: any) => (
-                <div>
+              {data.tag.map((tag: any, i: number) => (
+                <div key={i}>
                   <GatsbyImage
                     image={tag.childImageSharp.gatsbyImageData}
                     alt={data.name}
@@ -64,6 +65,18 @@ const ProjectCard: FC<ProjectCardProps> = ({ data }) => {
               </div>
             </div>
           </div>
+          {data.link !== null && (
+            <div className="w-full text-center py-10">
+              <a
+                className="text-bleuDark font-medium text-[18px]"
+                href={data.link}
+                target="_blank"
+              >
+                {data.link}
+              </a>
+            </div>
+          )}
+
           <div className="flex flex-col items-center w-full p-5">
             <h3 className="text-bleuDark font-medium text-[24px]">
               Contact me now on

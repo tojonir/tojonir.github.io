@@ -213,6 +213,7 @@ export const query = graphql`
     project: allProjectJson {
       nodes {
         name
+        link
         tag {
           childImageSharp {
             gatsbyImageData(layout: CONSTRAINED)
