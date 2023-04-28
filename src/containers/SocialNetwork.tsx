@@ -15,28 +15,34 @@ const SocialNetwork: FC<SocialNetworkProps> = ({
 }) => {
   return (
     <div className="flex items-center justify-between mt-[20px] w-full max-w-[300px]">
-      <a href="" target="_blank">
+      <a
+        href="https://web.facebook.com/profile.php?id=100075097910788"
+        target="_blank"
+      >
         <FontAwesomeIcon
-          icon={brands("instagram")}
+          icon={brands("facebook-f")}
           size={iconSize}
           className={`${iconStyle}`}
         />
       </a>
-      <a href="" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/tojonirina-andrianarijaona"
+        target="_blank"
+      >
         <FontAwesomeIcon
           icon={brands("linkedin-in")}
           size={iconSize}
           className={`${iconStyle}`}
         />
       </a>
-      <a href="" target="_blank">
+      <a href="mailto:tojonirinandrianarijaona@gmail.com" target="_blank">
         <FontAwesomeIcon
           icon={brands("google")}
           size={iconSize}
           className={`${iconStyle}`}
         />
       </a>
-      <a href="" target="_blank">
+      <a href="https://github.com/tojonir" target="_blank">
         <FontAwesomeIcon
           icon={brands("github")}
           size={iconSize}
