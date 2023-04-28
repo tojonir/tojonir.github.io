@@ -155,7 +155,7 @@ export const Head: HeadFC = () => <title>Home</title>;
 
 export const query = graphql`
   query {
-    profileImage: file(relativePath: { eq: "profile.png" }) {
+    profileImage: file(relativePath: { eq: "Profile.png" }) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED)
       }
