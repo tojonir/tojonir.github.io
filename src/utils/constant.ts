@@ -8,10 +8,6 @@ export const category = [
     slug: "graphic-2d",
   },
   {
-    title: "Case study",
-    slug: "ux",
-  },
-  {
     title: "UX/UI",
     slug: "ux-ui",
   },
