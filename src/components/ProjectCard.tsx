@@ -10,7 +10,6 @@ interface ProjectCardProps {
 
 const ProjectCard: FC<ProjectCardProps> = ({ data }) => {
   const [showModal, setShowModal] = useState<boolean>(false);
-  console.log(data);
   return (
     <>
       <div
