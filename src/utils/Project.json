@@ -19,13 +19,41 @@
     ]
   },
   {
-    "name": "Sales Poster Mockup",
+    "name": " Poster",
     "category": "graphic-2d",
-    "thumb": "../images/feature/poster-1.jpg",
+    "thumb": "../images/feature/poster-2.png",
     "tag": ["../images/tag/ps.png", "../images/tag/ai.png"],
     "content": [
-      "../images/feature/poster-1.jpg",
-      "../images/feature/poster-2.jpg"
+      "../images/feature/poster-1.png",
+      "../images/feature/poster-2.png",
+      "../images/feature/poster-3.png",
+      "../images/feature/poster-4.png",
+      "../images/feature/poster-5.png",
+      "../images/feature/poster-6.png"
+    ]
+  },
+  {
+    "name": "Flayers",
+    "category": "graphic-2d",
+    "thumb": "../images/feature/flayers.png",
+    "tag": ["../images/tag/ps.png", "../images/tag/ai.png"],
+    "content": ["../images/feature/flayers.png"]
+  },
+  {
+    "name": "Frame",
+    "category": "graphic-2d",
+    "thumb": "../images/feature/frame.png",
+    "tag": ["../images/tag/ps.png", "../images/tag/ai.png"],
+    "content": ["../images/feature/frame.png"]
+  },
+  {
+    "name": "Sales Poster Mockup",
+    "category": "graphic-2d",
+    "thumb": "../images/feature/mock-poster-1.jpg",
+    "tag": ["../images/tag/ps.png", "../images/tag/ai.png"],
+    "content": [
+      "../images/feature/mock-poster-1.jpg",
+      "../images/feature/mock-poster-2.jpg"
     ]
   }
 ]
