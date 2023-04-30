@@ -4,7 +4,12 @@
     "category": "web",
     "thumb": "../images/feature/tuix.png",
     "tag": [],
-    "content": ["../images/feature/tuix.png", "../images/feature/tuix-1.png"],
+    "content": [
+      "../images/feature/tuix.png",
+      "../images/feature/tuix-1.png",
+      "../images/feature/tuix-2.png",
+      "../images/feature/tuix-3.png"
+    ],
     "link": "https://tuix-design.github.io"
   },
   {
