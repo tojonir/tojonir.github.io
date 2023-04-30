@@ -13,7 +13,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ data }) => {
   return (
     <>
       <div
-        className="relative group cursor-pointer overflow-hidden"
+        className="relative group cursor-pointer overflow-hidden min-w-[200px] w-[200px] h-[250px] sm:w-full"
         onClick={() => setShowModal(true)}
       >
         <GatsbyImage
@@ -21,7 +21,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ data }) => {
           alt={data.name}
           className="h-full duration-100 group-hover:scale-110"
         />
-        <div className="absolute top-0 w-full h-full flex items-end  bg-gradient-to-t from-black to-transparent">
+        <div className="absolute top-0 w-full h-full flex items-end  hover:bg-gradient-to-t from-black to-transparent">
           <p className="font-semibold p-5">{data.name}</p>
         </div>
       </div>

@@ -134,7 +134,7 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
         {/* project */}
         <section className="offset">
           <div className="my-[5%] border border-purple-600 rounded-[5px] p-5">
-            <div className="grid grid-cols-4 gap-10 auto-rows-[250px] sm:grid-cols-1">
+            <div className="flex flex-wrap gap-10 p-5">
               {project.nodes.slice(0, 3).map((item: any) => (
                 <ProjectCard data={item} />
               ))}
