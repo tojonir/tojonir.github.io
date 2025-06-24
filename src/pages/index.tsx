@@ -7,7 +7,6 @@ import ProjectCard from "../components/ProjectCard";
 import DesignCard from "../components/DesignCard";
 
 const IndexPage: React.FC<PageProps> = ({ data }) => {
-  const { project } = data;
   return (
     <Layout>
       <>
@@ -135,7 +134,7 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
         <section className="offset">
           <div className="my-[5%] border border-purple-600 rounded-[5px] p-5">
             <div className="flex flex-wrap gap-10 p-5">
-              {project.nodes.slice(0, 3).map((item: any) => (
+              {data.project.nodes.slice(0, 3).map((item: any) => (
                 <ProjectCard data={item} />
               ))}
             </div>
